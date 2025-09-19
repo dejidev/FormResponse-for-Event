@@ -100,8 +100,9 @@
 
 import { create } from "zustand";
 import type { AxiosResponse } from "axios";
-import api from "@/services/authService";
-import { getErrorMessage } from "@/utils/error"; // 🔧 helper
+import api from "../services/authService";
+import { getErrorMessage } from "../utils/error";
+
 
 // ---------- Types ---------- //
 export interface Form {

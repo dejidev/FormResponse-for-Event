@@ -115,7 +115,7 @@ export const useAuthStore = create<AuthStore>()(
                 set({ isLoading: true });
                 try {
                     // Dynamic import to avoid circular dependency
-                    const { default: api } = await import("@/services/authService");
+                    const { default: api } = await import("../services/authService");
                     await api.post("/auth/logout");
                 } finally {
                     set({

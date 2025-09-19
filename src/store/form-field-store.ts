@@ -1,8 +1,10 @@
 
 
 import { create } from "zustand";
-import api from "@/services/authService";
-import { getErrorMessage } from "@/utils/error";
+import { getErrorMessage } from "../utils/error";
+import api from "../services/authService";
+// import api from "@/services/authService";
+// import { getErrorMessage } from "@/utils/error";
 
 export type FieldType = "TEXT" | "MCQ" | "CHECKBOX" | "DROPDOWN";
 

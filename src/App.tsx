@@ -1,7 +1,7 @@
 import { ToastContainer } from "react-toastify";
 import AppRoutes from "./routes/appRoute";
-// import AppRoute from "@/routes/AppRoute";
-// import { ThemeProvider } from "./context/ThemeProvider";
+
+
 function App() {
   return (
     <div className="duration-200">
@@ -14,12 +14,7 @@ function App() {
         }}
       />
 
-      <div>
-        <p className="bg-red-900 text-3xl">Here we go</p>
-      </div>
-      {/* <ThemeProvider> */}
         <AppRoutes/>
-      {/* </ThemeProvider> */}
     </div>
   );
 }

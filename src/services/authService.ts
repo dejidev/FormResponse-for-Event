@@ -1,8 +1,3 @@
-
-
-// ==========================================
-// 📁 src/services/authService.ts
-// ==========================================
 import axios from "axios";
 
 // Create the main API instance with interceptors
@@ -31,7 +26,7 @@ api.interceptors.response.use(
 
             try {
                 // Dynamic import to avoid circular dependency
-                const { useAuthStore } = await import("@/store/auth-store");
+                const { useAuthStore } = await import("../store/auth-store");
                 const { refreshToken } = useAuthStore.getState();
                 const result = await refreshToken();
 
@@ -48,7 +43,7 @@ api.interceptors.response.use(
             } catch (refreshError) {
                 console.log('❌ Refresh error:', refreshError);
                 // Dynamic import here too in case of error
-                const { useAuthStore } = await import("@/store/auth-store");
+                const { useAuthStore } = await import("../store/auth-store");
                 useAuthStore.getState().logout();
                 return Promise.reject(error);
             }

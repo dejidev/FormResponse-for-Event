@@ -1,7 +1,8 @@
 import { create } from "zustand";
 import type { AxiosResponse } from "axios";
-import api from "@/services/authService";
-import { getErrorMessage } from "@/utils/error";
+import api from "../services/authService";
+import { getErrorMessage } from "../utils/error";
+
 
 // ---------- Types ---------- //
 export type EventType = "PHYSICAL" | "VIRTUAL" | "HYBRID";

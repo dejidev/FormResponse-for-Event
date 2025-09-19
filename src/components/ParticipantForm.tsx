@@ -198,7 +198,7 @@ export default function ParticipantForm({ eventId }: ParticipantFormProps) {
     const formTitle = event ? `Register for: ${event.name}` : "Event Registration";
 
     return (
-        <div className="min-h-screen bg-purple-50 py-8">
+        <div className="min-h-screen bg-purple-50 pb-8">
             <div className="max-w-3xl mx-auto px-4">
                 {/* Event Header */}
                 <div className="bg-white rounded-lg shadow mb-6 overflow-hidden">
