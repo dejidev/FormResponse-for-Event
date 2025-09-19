@@ -10,6 +10,7 @@ export default function AppRoutes() {
     return (
         <HashRouter>
             <Routes>
+                <Route path="/" element={<div className="flex items-center justify-center">Invalid Link. Please use a valid event link.</div>} />
                 <Route path="/:eventId" element={<FormPage />} />
                 <Route path="/signin" element={<SignIn />} />
                 <Route path="/signup" element={<SignUp />} />
