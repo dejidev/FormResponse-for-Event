@@ -2,9 +2,10 @@ import axios from "axios";
 
 // Create the main API instance with interceptors
 const api = axios.create({
-    baseURL: import.meta.env.PROD
-        ? "https://nithub-event-backend.onrender.com/api/v1"
-        : "/api", // proxy in dev, full URL in prod
+    // baseURL: import.meta.env.PROD
+    //     ? "https://nithub-event-backend.onrender.com/api/v1"
+    //     : "/api", // proxy in dev, full URL in prod
+    baseURL: "https://nithub-event-backend-prod.onrender.com/api/v1",
     withCredentials: true,
     headers: {
         "Content-Type": "application/json",
