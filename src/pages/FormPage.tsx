@@ -1,9 +1,13 @@
 // src/pages/FormPage.tsx
 import { useParams } from "react-router-dom";
 import ParticipantForm from "../components/ParticipantForm";
+import { useEffect } from "react";
 
 export default function FormPage() {
     const { eventId } = useParams<{ eventId: string }>();
+    useEffect(() => {
+        console.log("Current path:", window.location.pathname);
+    }, []);
 
     // Basic validation
     if (!eventId) {
