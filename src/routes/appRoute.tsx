@@ -1,5 +1,3 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import SignUp from "../pages/SignUp";
 import FormPage from "../pages/FormPage";
 import SignIn from "../pages/Signin";
@@ -71,4 +69,4 @@ export default function AppRoutes() {
 //             </Routes>
 //         </BrowserRouter>
 //     );
-// }
+//}

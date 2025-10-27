@@ -180,7 +180,7 @@ export default function ParticipantForm({ eventId }: ParticipantFormProps) {
         return (
             <div className="min-h-screen bg-purple-50 flex items-center justify-center">
                 <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow text-center">
-                    <div className="text-6xl mb-4">✅</div>
+                    <div className="text-6xl mb-4"></div>
                     <h2 className="text-2xl font-semibold text-green-600 mb-2">
                         Registration Successful!
                     </h2>

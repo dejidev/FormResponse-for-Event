@@ -17,9 +17,10 @@ import type {
 
 // Create a separate axios instance ONLY for refresh calls (no interceptors!)
 const refreshApi = axios.create({
-    baseURL: import.meta.env.PROD
-        ? "https://nithub-event-backend.onrender.com/api/v1"
-        : "/api",
+    // baseURL: import.meta.env.PROD
+    //     ? "https://nithub-event-backend.onrender.com/api/v1"
+    //     : "/api",
+        baseURL: "https://nithub-backend-event.agrotrade.com.ng/api/v1",
     withCredentials: true,
     headers: {
         "Content-Type": "application/json",

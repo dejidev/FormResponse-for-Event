@@ -5,7 +5,7 @@ const api = axios.create({
     // baseURL: import.meta.env.PROD
     //     ? "https://nithub-event-backend.onrender.com/api/v1"
     //     : "/api", // proxy in dev, full URL in prod
-    baseURL: "https://nithub-event-backend-prod.onrender.com/api/v1",
+    baseURL: "https://nithub-backend-event.agrotrade.com.ng/api/v1",
     withCredentials: true,
     headers: {
         "Content-Type": "application/json",
@@ -22,7 +22,7 @@ api.interceptors.response.use(
         const originalRequest = error.config;
 
         if (error.response?.status === 401 && !originalRequest._retry) {
-            console.log('🔄 Attempting token refresh...');
+            console.log('Attempting token refresh...');
             originalRequest._retry = true;
 
             try {
