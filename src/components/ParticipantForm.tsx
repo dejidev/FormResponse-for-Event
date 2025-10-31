@@ -33,7 +33,7 @@ export default function ParticipantForm({ eventId }: ParticipantFormProps) {
     const [event, setEvent] = useState<Event | null>(null);
     const [formId, setFormId] = useState<string | null>(null);
     const [fields, setFields] = useState<FormField[]>([]);
-    const [name, setName] = useState("");
+    // const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [responses, setResponses] = useState<Record<string, string | string[]>>({});
     const [loading, setLoading] = useState(true);
@@ -82,7 +82,7 @@ export default function ParticipantForm({ eventId }: ParticipantFormProps) {
 
     const validateRequired = () => {
         const missed: string[] = [];
-        if (!name.trim()) missed.push("name");
+        // if (!name.trim()) missed.push("name");
         if (!email.trim()) missed.push("email");
 
         fields.forEach((f) => {
@@ -123,7 +123,7 @@ export default function ParticipantForm({ eventId }: ParticipantFormProps) {
 
         const payload = {
             eventId,
-            name: name.trim(),
+            // name: name.trim(),
             email: email.trim(),
             responses
         };
@@ -239,7 +239,7 @@ export default function ParticipantForm({ eventId }: ParticipantFormProps) {
                                 Your Information
                             </h3>
 
-                            <div>
+                            {/* <div >
                                 <label className="text-sm font-medium text-gray-700">
                                     Full Name <span className="text-red-500">*</span>
                                 </label>
@@ -251,7 +251,7 @@ export default function ParticipantForm({ eventId }: ParticipantFormProps) {
                                     className="mt-2 block w-full px-3 py-2 border-b-2 border-gray-200 focus:border-purple-500 outline-none bg-gray-50 rounded"
                                     placeholder="Enter your full name"
                                 />
-                            </div>
+                            </div> */}
 
                             <div>
                                 <label className="text-sm font-medium text-gray-700">
